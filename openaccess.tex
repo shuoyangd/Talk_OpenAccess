@@ -10,7 +10,7 @@
 
 % font
 \usepackage{fontspec}
-\setsansfont{TeX Gyre Heros}
+%\setsansfont{TeX Gyre Heros}
 \setbeamerfont{note page}{family*=pplx,size=\footnotesize} % Palatino for notes
 % "TeX Gyre Heros can be used as a replacement for Helvetica"
 % In Unix, unzip the following into ~/.fonts
@@ -29,11 +29,49 @@
 \definecolor{lolight}{RGB}{155,155,155}
 %\definecolor{green}{RGB}{125,250,125}
 
+% add JHU color schemes in there
+\definecolor{PMS548C}{RGB}{0, 61, 76}
+\definecolor{PMS7696C}{RGB}{99, 153, 174}
+\definecolor{PMS284C}{RGB}{114,172,229}
+\definecolor{PMS300C}{RGB}{0, 94, 184}
+\definecolor{PMS279C}{RGB}{65, 143, 222}
+\definecolor{PMS651C}{RGB}{167, 188, 214}
+\definecolor{PMS7675C}{RGB}{124, 127, 171}
+\definecolor{PMS273C}{RGB}{36, 19, 95}
+\definecolor{PMS2617C}{RGB}{71, 10, 104}
+\definecolor{PMS7656C}{RGB}{142, 58, 128}
+\definecolor{PMS5205C}{RGB}{134, 100, 122}
+\definecolor{PMS1915C}{RGB}{239, 74, 129}
+\definecolor{PMS505C}{RGB}{111, 44, 63}
+\definecolor{PMS7623C}{RGB}{138, 42, 43}
+\definecolor{PMS179C}{RGB}{224, 60, 49}
+\definecolor{PMS486C}{RGB}{232, 146, 124}
+\definecolor{PMS173C}{RGB}{207, 69, 32}
+\definecolor{PMS1505C}{RGB}{255, 10, 0}
+\definecolor{PMS732C}{RGB}{98, 52, 18}
+\definecolor{PMS1375C}{RGB}{255 ,158, 27}
+\definecolor{PMS1215C}{RGB}{251, 216, 114}
+\definecolor{PMS116C}{RGB}{225, 205, 0}
+\definecolor{PMS101C}{RGB}{247, 234, 72}
+\definecolor{PMS584C}{RGB}{210, 215, 85}
+\definecolor{PMS574C}{RGB}{78, 91, 49}
+\definecolor{PMS7489C}{RGB}{116, 170, 80}
+\definecolor{PMS7743C}{RGB}{68, 105, 61}
+\definecolor{PMS341C}{RGB}{0, 122, 82}
+\definecolor{PMS564C}{RGB}{134, 200, 188}
+\definecolor{PMS3268C}{RGB}{0, 141, 142}
+\definecolor{PMSGREY1}{RGB}{229, 226, 224}
+\definecolor{PMSGREY2}{RGB}{180, 178, 173}
+\definecolor{PMSGREY3}{RGB}{126, 126, 124}
+\definecolor{PMSGREY4}{RGB}{74, 72, 76}
+\definecolor{PMSGREY5}{RGB}{44, 44, 51}
+
 % use those colors
-\setbeamercolor{titlelike}{fg=title}
-\setbeamercolor{subtitle}{fg=subtitle}
-\setbeamercolor{institute}{fg=gray}
-\setbeamercolor{normal text}{fg=foreground,bg=background}
+\setbeamercolor{titlelike}{fg=PMS284C}
+\setbeamercolor{subtitle}{fg=PMS1215C}
+\setbeamercolor{author}{fg=PMS1215C}
+\setbeamercolor{institute}{fg=PMSGREY1}
+\setbeamercolor{normal text}{fg=foreground,bg=PMSGREY5}
 \setbeamercolor{item}{fg=foreground} % color of bullets
 \setbeamercolor{subitem}{fg=gray}
 \setbeamercolor{itemize/enumerate subbody}{fg=gray}
@@ -53,20 +91,13 @@
 \newcommand{\bi}{\begin{itemize}}
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\ig}{\includegraphics}
-\newcommand{\subt}[1]{{\footnotesize \color{subtitle} {#1}}}
+\newcommand{\subt}[1]{{\footnotesize \color{PMS1215C} {#1}}}
 
 % title info
-\title{Open access publishing}
-\subtitle{A researcher's perspective}
-\author{\href{http://kbroman.org}{Karl Broman}}
-\institute{\href{https://www.biostat.wisc.edu}{Biostatistics \& Medical Informatics} \\[2pt] \href{http://www.wisc.edu}{University of Wisconsin{\textendash}Madison}}
-\date{\href{http://kbroman.org}{\tt \scriptsize kbroman.org}
-\\[-4pt]
-\href{https://github.com/kbroman}{\tt \scriptsize github.com/kbroman}
-\\[-4pt]
-\href{https://twitter.com/kwbroman}{\tt \scriptsize @kwbroman}
-}
-
+\title{A Research That Is Extremely Complicated And Fancy}
+\author{Shuoyang Ding\\ {\tt People\_who\_is\_smarter\_than\_me}}
+\institute{Johns Hopkins University}
+\date{\today}
 
 \begin{document}
 
